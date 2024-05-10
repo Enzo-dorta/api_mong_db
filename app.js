@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 
-const contatoRouter = require('./rotas/contatosRotas');
+const contatoRouter = require('./routes/contatoRoutes');
 app.use('/contatos', contatoRouter);
 
 mongoose.connect(process.env.MONGODB_URI, {

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router(); // ao ser trocado a rota ele permanece as variaveis,de onde vem o caminho, gerencia a rota do contato, o arquivo INTEIRO é sobre um unica rota: rota.get; rota.put; rota.post
-const Contato = require('../modelos/contato'); // altera o modelo da busca, mas depende do driver, find é da biblioteca de busca, por isso é importante ler o doc
+const Contato = require('../models/contato'); // altera o modelo da busca, mas depende do driver, find é da biblioteca de busca, por isso é importante ler o doc
 
 // Rota para obter todos os contatos
 router.get('/', async (req, res) => { // async = serve para fazer uma tarefa no plano de fundo, sendo assim atividades independentes se ativarem em parelelo  await so funciona com async
